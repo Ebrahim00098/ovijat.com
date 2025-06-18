@@ -1,0 +1,221 @@
+@font-face {
+  font-family: 'Bornomala';
+  src: url('Bornomala.ttf');
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #f7f7f7;
+  font-family: 'Bornomala', sans-serif;
+}
+
+.container {
+  width: 921px;
+  height: 2048px;
+  margin: auto;
+  background: #fff;
+  position: relative;
+}
+
+/* উপরের সারাংশ ডিজাইন */
+.card1, .card2 {
+  position: absolute;
+  border-radius: 30px;
+  padding: 30px;
+  background: #fff;
+  box-sizing: border-box;
+}
+
+.card1 {
+  top: 280px;
+  left: 34px;
+  width: 853px;
+  height: 280px;
+  border: 1px solid #999;
+  border-radius: 40px;
+}
+
+.card2 {
+  top: 720px;
+  left: 34px;
+  width: 853px;
+  height: 235px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 25px;
+}
+
+.tab {
+  width: 500px;
+  height: 60px;
+  background: #f1f1f1;
+  border-radius: 50px;
+  display: flex;
+  overflow: hidden;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+  margin: 0 auto 30px;
+}
+
+.tab div {
+  flex: 1;
+  text-align: center;
+  line-height: 65px;
+  font-size: 28px;
+}
+
+.tab .active {
+  background: #2396F2;
+  color: white;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.row div {
+  text-align: center;
+  font-size: 36px;
+  width: 200px;
+}
+
+.green { color: #4DB050; }
+.red { color: #F44136; }
+.brown { color: #8E4000; }
+.blue { color: #2396F2; }
+
+.circles {
+  position: absolute;
+  top: 600px;
+  left: 35px;
+  display: flex;
+  gap: 40px;
+}
+
+.circle {
+  width: 140px;
+  height: 70px;
+  background: #2396F2;
+  border-radius: 35px;
+}
+.circle:last-child {
+  width: 70px;
+}
+
+.add-button {
+  position: absolute;
+  top: 980px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: #4DB050;
+  color: white;
+  font-size: 48px;
+  text-align: center;
+  line-height: 70px;
+  cursor: pointer;
+  display: none;
+  z-index: 1000;
+}
+
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  padding: 20px;
+  border-radius: 30px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  width: 320px;
+  display: none;
+  z-index: 2000;
+}
+
+.input-group {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 10px;
+  background: #fafafa;
+}
+.input-group input,
+.input-group textarea {
+  border: none;
+  outline: none;
+  background: transparent;
+  flex: 1;
+  font-size: 16px;
+  margin-left: 10px;
+  font-family: inherit;
+}
+
+.input-group img {
+  width: 20px;
+  height: 20px;
+  opacity: 0.3;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.buttons button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.cancel { background: transparent; color: #333; }
+.submit { background: #28a745; color: white; }
+
+/* হেডার ও এন্ট্রি */
+.product-header {
+  margin-top: 1000px;
+  background: #e9fcef;
+  padding: 20px;
+  border-radius: 30px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 20px;
+  font-weight: bold;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.product-header div {
+  flex: 1;
+  text-align: center;
+}
+.product-header div:last-child {
+  flex: 0.2;
+}
+
+.product-entry {
+  display: flex;
+  justify-content: space-between;
+  background: #fff;
+  padding: 15px 20px;
+  border-bottom: 1px solid #ccc;
+  font-size: 18px;
+  width: 90%;
+  margin: 0 auto;
+}
+.product-entry div {
+  flex: 1;
+  text-align: center;
+}
+.product-entry div:last-child {
+  flex: 0.2;
+}

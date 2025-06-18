@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <title>Fixed Size Design</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+
+    <div class="card1">
+      <div class="tab">
+        <div class="active" id="currentMonth">চলতি মাস</div>
+        <div>সর্বমোট</div>
+      </div>
+      <div class="row">
+        <div>
+          <div class="green">ক্রয়</div>
+          <div>৳০০.০</div>
+        </div>
+        <div>
+          <div class="red">বিক্রয়</div>
+          <div>৳০০.০</div>
+        </div>
+        <div>
+          <div class="brown">আদায়</div>
+          <div>৳০০.০</div>
+        </div>
+        <div>
+          <div class="blue">ব্যালেন্স</div>
+          <div>৳০০.০</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="circles">
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+    </div>
+
+    <div class="card2">
+      <div>
+        <strong>দিন/তারিখ</strong>
+        <span id="todayDate">০০/০০/০০০০</span><br>
+        <span id="todayDay">বার</span>
+      </div>
+      <div>
+        <strong>মোট পণ্য</strong>
+        ১ টি
+      </div>
+      <div>
+        <strong class="green">মোট ক্রয়</strong>
+        ৳০০.০
+      </div>
+      <div>
+        <strong class="red">মোট বিক্রয়</strong>
+        ৳০০.০
+      </div>
+      <div>
+        <strong class="blue">লাভ</strong>
+        ৳০০.০
+      </div>
+      <div class="dots">⋮</div>
+    </div>
+
+    <!-- যোগ বাটন -->
+    <div class="add-button" id="addButton">+</div>
+
+    <!-- পপআপ -->
+    <div class="popup" id="popupForm">
+      <div class="input-group">
+        <img src="https://img.icons8.com/ios-filled/50/product.png" alt="পণ্যের নাম">
+        <input type="text" placeholder="পণ্যের নাম" id="productName">
+      </div>
+      <div class="input-group">
+        <img src="https://img.icons8.com/ios-filled/50/sale.png" alt="বিক্রয়">
+        <input type="number" placeholder="বিক্রয় টাকার পরিমাণ" id="saleAmount">
+      </div>
+      <div class="input-group">
+        <img src="https://img.icons8.com/ios-filled/50/purchase-order.png" alt="ক্রয়">
+        <input type="number" placeholder="ক্রয় টাকার পরিমাণ" id="purchaseAmount">
+      </div>
+      <div class="input-group">
+        <img src="https://img.icons8.com/ios-filled/50/money.png" alt="আদায়">
+        <input type="text" placeholder="আদায় খরচ" id="paymentMethod">
+      </div>
+      <div class="input-group">
+        <img src="https://img.icons8.com/ios-filled/50/edit-text.png" alt="বিবরণ">
+        <textarea placeholder="বিবরণ লিখুন" id="description"></textarea>
+      </div>
+      <div class="buttons">
+        <button class="cancel" onclick="clearForm()">বাতিল</button>
+        <button class="submit" onclick="submitForm()">যোগ করুন</button>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="container">
+  ...
+  <div id="entriesContainer" class="daily-entries"></div> <!-- এন্ট্রি গুলো -->
+  <div class="add-button" id="addButton">+</div>   <!-- যোগ বাটন -->
+
+  <!-- প্রতিদিনের এন্ট্রি দেখানোর জায়গা -->
+  <div id="entriesContainer" class="daily-entries"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
